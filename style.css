@@ -1,0 +1,66 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container,
+.restart-container,
+.message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 3rem 0;
+    font-size: 4rem;
+}
+
+.game-container {
+    min-height: 70vh;
+}
+
+.winMessage {
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.game {
+    height: 18rem;
+    aspect-ratio: 1 / 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.tile{
+    height: 6rem;
+    aspect-ratio: 1/ 1;
+    border: 0.1rem solid hsl(123 40% 40%);
+}
+
+/* .block:nth-child(-n+3) {
+    border-top: none;
+}
+
+.block:nth-child(n-3) {
+    border-bottom: none;
+}
+
+.block:nth-child(3n-2) {
+    border-left: none;
+}
+
+.block:nth-child(3n) {
+    border-right: none;
+} */
+
+.restart {
+    border: none;
+    height: 2.8rem;
+    aspect-ratio: 3.2 / 1;
+    border-radius: 2rem;
+    cursor: pointer;
+}
