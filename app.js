@@ -38,7 +38,7 @@ function checkWinOrTie() {
         restart.disabled = false;
         isGameActive = false;
     }
-    if(!board.includes('')) {
+    else if(!board.includes('')) {
         winMessage.innerText = "Tie";
         restart.disabled = false;
     }
